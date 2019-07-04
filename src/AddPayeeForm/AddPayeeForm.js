@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import style from './AddPayeeForm.module.css';
-//import axios from '../axios';
 
 class PayeeForm extends Component {
 	state = {
@@ -32,19 +31,9 @@ class PayeeForm extends Component {
 		event.preventDefault();
 		if ( this.isValidZip() && this.isValidAccountNum() ) {
 			this.props.addItem( this.state.payees ) //called from SavedPayees
-
-			//  const payee =  {
-			// 	payee: this.state.payees.payee,
-			// 	accountNumber: this.state.payees.accountNumber.toUpperCase(),
-			// 	zipCode: this.state.payees.zipCode,
-			// 	payments: []
-			// }
-			// axios.post( '/payees.json', payee )
-			// 	.then( response => console.log( response ) )
-			// 	.catch( error => console.log( error ) );
 		}
 
-		// else console.log( 'invalid input field' );
+		else console.log( 'invalid input field' );
 		this.setState( {
 			payees: {
 				payee: '',

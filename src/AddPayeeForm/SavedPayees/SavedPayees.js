@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AddPayeeForm from '../AddPayeeForm';
 import DisplayTransactions from './DisplayTransactions/DisplayTransactions';
 import style from './SavedPayees.module.css';
-import axios from '../../axios';
 
 class AddPayee extends Component {
     state = {
@@ -46,17 +45,7 @@ class AddPayee extends Component {
         ],
         firebase: {}
     }
-    async componentDidMount() {
-        // console.log( 'component did mount from saved payees' )
-        // let response = await axios.get( 'https://bill-payments-tracker.firebaseio.com/payees.json' );
-        // //console.log(response.data )
-        // const payeesFirebase = [];
-        // for(let key in response.data) {
-        //    payeesFirebase.push(response.data[key])
-        // }
-        // this.setState({firebase: payeesFirebase});
-       
-    }
+  
     addItem = ( newPayee ) => {
         newPayee.accountNumber = newPayee.accountNumber.toUpperCase();
         newPayee.payee = newPayee.payee.toUpperCase();
