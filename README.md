@@ -1,8 +1,8 @@
 A front end react project that allows the user to enter information about any transactions they have made to specific payees.
-This is only the front end portion of the project so it will not save anything permanently.
+This is only the front end portion of the project full stack app is found in https://github.com/gustavoweb33/bill-payments-tracker-with-firebase-
 The user will first enter the information about the payee.
 Then the user will be allowed to enter transaction information like a reference number under that payee. 
-For a more complete work look for the bill-payments-tracker-with-firebase repo. 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
